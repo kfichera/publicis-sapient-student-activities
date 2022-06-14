@@ -1,1 +1,1 @@
-My Name: 
+My Name: Kat (Katherine) Fichera
