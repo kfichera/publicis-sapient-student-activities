@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <h1>Form</h1>
+</head>
+
+<body>
+    <form>
+        <table>
+            <TR>
+                <TD><label for="fname">First name:</label></TD>
+                <TD><input type="text" id="fname" name="fname"></TD>
+            </TR>
+            <TR>
+                <TD><label for="Password"> Password:</label></TD>
+                <TD><input type="password" id="password" name="Password"></TD>
+            </TR>
+            <TR>
+                <TD><label for="gender">Gender:</label></TD>
+                <TD>
+                    <input type="radio" id="femaleGender" name="Gender" value="Female">
+                    <label for="femaleGender">Female</label>
+                    <input type="radio" id="maleGender" name="Gender" value="Male">
+                    <label for="maleGender">Male</label>
+                    <input type="radio" id="otherGender" name="Gender" value="Other">
+                    <label for="otherGender">Other</label>
+                </TD>
+            </TR>
+            <TR>
+                <TD><label for="Skills">Skills:</label></TD>
+                <TD>
+                    <input type="checkbox" id="java" name="java" value="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="Python" name="Python" value="Python">
+                    <label for="Python">Python</label>
+                    <input type="checkbox" id="JS" name="JS" value="JS">
+                    <label for="JS">JavaScript</label><br>
+                </TD>
+            </TR>
+            <TR>
+                <TD><label for="Qualifications">Qualification</label></TD>
+                <TD>
+                    <select name="Qualifications" id="Qualifications">
+                        <option value="certified">Certifications</option>
+                        <option value="Expierence">Expierence</option>
+                        <option value="Volunteer">Volunteer</option>
+                        <option value="Teamwork">Teamwork</option>
+                    </select>
+                </TD>
+            </TR>
+            <TR>
+                <TD><label for="DOB">DOB:</label></TD>
+                <TD>
+                    <input type="date" id="dob" name="dob">
+                </TD>
+            </TR>
+            <TR>
+                <TD><input type="reset"></TD>
+                <TD><input type="submit" value="Register"></TD>
+            </TR>
+
+        </table>
+
+    </form>
+</body>
+
+</html>

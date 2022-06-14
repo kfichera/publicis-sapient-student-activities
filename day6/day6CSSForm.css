@@ -1,0 +1,40 @@
+div {
+    border-style: solid;
+    border-color: red;
+}
+
+
+.top {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    width: 100px;
+    height: 70%;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.right {
+    width: 100px;
+    height: 70%;
+    margin-left: 85%;
+    margin-bottom: 150px;
+    margin-top: -519px;
+}
+
+.middle {
+    width: 500px;
+    margin-left: 110px;
+    height: 70%;
+    margin-top: -526px;
+}
+
+.bottom {
+    width: 100%;
+    height: 100px;
+    margin-top: -130px;
+}
