@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <h1>Chess Table</h1>
+</head>
+
+<body>
+    <canvas id="chess" style="border:5px solid black" width="600px" height="600px">
+
+    </canvas>
+    <script type="text/javascript">
+        let table = document.getElementById('chess').getContext('2d');
+        // each block will be 75 x 75
+        let xLocation = 0;
+        let yLocation = 0;
+        for (let i = 0; i < 8; i++) {
+            xLocation = 0;
+            for (let j = 0; j < 8; j++) {
+                if (j % 2 == 0) {
+                    table.fillRect(xLocation, yLocation, 75, 75);
+                }
+                else {
+                    table.strokeRect(xLocation, yLocation, 75, 75);
+                }
+                xLocation += 75;
+            }
+            yLocation += 75;
+
+        }
+
+    </script>
+</body>
+
+</html>

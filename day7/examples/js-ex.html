@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Demo on javascript</h1>
+    <input type="text" id="i1">
+    <br />
+    <button onclick="handleClick(event)">My Button</button>
+    <p onclick="handleClick(event)">My Paragraph</p>
+    <div id="i2">Name is: </div>
+    <script type="text/javascript">
+        function handleClick(e) {
+            console.log(e);
+            console.log(e.target);
+            let ele = document.getElementById("i1");
+            console.log(ele.value);
+            let ele2 = document.getElementById('i2');
+            ele2.innerHTML = ele2.innerHTML + ele.value;
+        }
+    </script>
+</body>
+
+</html>

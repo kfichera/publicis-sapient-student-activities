@@ -1,0 +1,91 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+
+    animation: change 5s alternate infinite;
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 1000% 1000% 0 0;
+    animation: newChange 5s alternate infinite;
+}
+
+@keyframes newChange {
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background-color: orangered;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    30% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: yellowgreen;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: teal;
+    }
+
+    70% {
+        background-color: blue;
+    }
+
+    80% {
+        background-color: blueviolet;
+    }
+
+    90% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes change {
+
+    0% {
+        background-color: Dyellow;
+        border-radius: 0 0 0 0;
+    }
+
+    25% {
+        background-color: lyellowgreen;
+        border-radius: 50% 0 0 0;
+
+    }
+
+    50% {
+        background-color: greenyellow;
+        border-radius: 50% 50% 0 0;
+
+    }
+
+    75% {
+        background-color: Ablueviolet;
+        border-radius: 50% 50% 50% 0;
+    }
+
+    100% {
+        background-color: blue;
+        border-radius: 50% 50% 50% 50%;
+    }
+}

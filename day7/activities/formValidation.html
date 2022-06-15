@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <h1>Form Validation</h1>
+</head>
+
+<body>
+    <form name="login" onsubmit="return handleSubmit()">
+        First name: <input type="text" name="fName" /> <br />
+        Last name: <input type="text" name="lName" /> <br />
+        Gender: <input type="radio" id="femaleGender" name="Female" value="Female">
+        <label for="femaleGender">Female</label>
+        <input type="radio" id="maleGender" name="Male" value="Male">
+        <label for="maleGender">Male</label>
+        <input type="radio" id="otherGender" name="Other" value="Other">
+        <label for="otherGender">Other</label> <br />
+        Password: <input type="password" name="password" /> <br />
+        Confirm Password: <input type="password" name="cPassword" /> <br />
+        Skills: <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" id="Python" name="Python" value="Python">
+        <label for="Python">Python</label>
+        <input type="checkbox" id="JS" name="JS" value="JS">
+        <label for="JS">JavaScript</label><br>
+        <input type="submit" value="submit" />
+    </form>
+    <script type="text/javascript">
+        function handleSubmit() {
+            let loginForm = document.login;
+            let firstName = loginForm.fName;
+            if (firstName.value.length < 3) {
+                alert('first name is not valid');
+            }
+            let lastName = loginForm.lName;
+            if (lastName.value.length < 2) {
+                alert('last name is not valid')
+            }
+
+            let femaleButton = loginForm.Female;
+            let maleButton = loginForm.Male;
+            let otherButton = loginForm.Other;
+            if (!femaleButton.checked && !maleButton.checked && !otherButton.checked) {
+                alert("no gender checked");
+            }
+
+
+            let ogPassword = loginForm.password;
+            let checkPassword = loginForm.cPassword;
+            if (ogPassword.value != checkPassword.value) {
+                alert('passwords are different!')
+            }
+
+            let javaChecked = loginForm.java;
+            let pythonChecked = loginForm.Python;
+            let javaScriptChecked = loginForm.JS;
+            if (!javaChecked.checked && !pythonChecked.checked && !javaScriptChecked.checked) {
+                alert("no skills are checked!")
+            }
+
+        }
+    </script>
+</body>

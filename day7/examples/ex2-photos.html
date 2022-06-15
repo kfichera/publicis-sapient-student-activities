@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .smallImages {
+            width: 150;
+            height: 100;
+            border: 2px solid black;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Event handling in JS</h2>
+    <img src="pic1.png" width="500" height="400" id="main" />
+
+    <div onclick="changeImages(event)" width='500' ;style='border: 2px solid black;'>
+        <img src="pic1.png" class="smallImages" />
+        <img src="pic2.png" class="smallImages" />
+        <img src="pic3.png" class="smallImages" />
+        <img src="pic4.png" class="smallImages" />
+    </div>
+
+    <script type='text/javascript'>
+        function changeImages(e) {
+            let mainImage = document.getElementById('main');
+            let target = e.target;
+            if (target.tagName == 'IMG') {
+                mainImage.src = target.src;
+            }
+        }
+    </script>
+</body>
+
+</html>
