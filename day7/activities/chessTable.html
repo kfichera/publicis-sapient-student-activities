@@ -16,11 +16,17 @@
         for (let i = 0; i < 8; i++) {
             xLocation = 0;
             for (let j = 0; j < 8; j++) {
-                if (j % 2 == 0) {
-                    table.fillRect(xLocation, yLocation, 75, 75);
+                if (i % 2 == 0) {
+                    if (j % 2 == 0) {
+                        table.fillRect(xLocation, yLocation, 75, 75);
+                    }
                 }
                 else {
-                    table.strokeRect(xLocation, yLocation, 75, 75);
+                    if (j % 2 !== 0) {
+
+                        table.fillRect(xLocation, yLocation, 75, 75);
+                    }
+
                 }
                 xLocation += 75;
             }
