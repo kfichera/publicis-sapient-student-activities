@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <title>React Doc</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <!--Libraries-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        function UserList() {
+            let list = [{ name: "Kate", age: 25 }, { name: "Daisy", age: 20 }, { name: "molly", age: 29 }];
+            return (<div>
+                {
+                    list.map(item => <div>Hello {item.name}, your age is: {item.age}</div>)
+                }
+            </div>);
+        }
+        function App() {
+            return (<div>
+                <h1>This is a root component</h1>
+
+                <UserList />
+            </div>);
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+
+</body>
+
+</html>
